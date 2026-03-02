@@ -1,0 +1,19 @@
+.header {
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #aaa;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+.navbar a {
+    cursor: pointer;
+}

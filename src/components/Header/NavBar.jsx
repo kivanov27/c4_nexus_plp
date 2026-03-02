@@ -1,8 +1,13 @@
-const NavBar = ({ categories }) => {
+const NavBar = ({ categories, setCategory }) => {
     return (
-        <div className="flex flex-row gap-x-2">
+        <div className="navbar">
             {categories.map((category, i) => 
-                <button key={i}>{category}</button>
+                <a 
+                    key={i}
+                    onClick={() => setCategory(category)}
+                >
+                    {category}
+                </a>
             )}
         </div>
     );

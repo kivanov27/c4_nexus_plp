@@ -3,6 +3,7 @@ import Header from "./components/Header";
 
 const App = () => {
     const [products, setProducts] = useState([]);
+    const [category, setCategory] = useState('');
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -23,7 +24,10 @@ const App = () => {
 
     return (
         <div>
-            <Header categories={categories} />
+            <Header 
+                categories={categories} 
+                setCategory={setCategory} 
+            />
         </div>
     );
 };
