@@ -1,7 +1,7 @@
 import "./index.css";
 import NavBar from "./NavBar";
 
-const Header = ({ categories, setCategory }) => {
+const Header = ({ categories, selectedCategory, setCategory }) => {
     return (
         <div className="header">
             <svg width="56" height="40" viewBox="0 0 56 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -10,6 +10,7 @@ const Header = ({ categories, setCategory }) => {
             </svg>
             <NavBar 
                 categories={categories} 
+                selectedCategory={selectedCategory}
                 setCategory={setCategory} 
             />
         </div>

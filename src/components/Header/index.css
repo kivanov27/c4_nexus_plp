@@ -1,11 +1,12 @@
 .header {
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: 1rem 2rem;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .navbar {
@@ -16,4 +17,8 @@
 
 .navbar a {
     cursor: pointer;
+}
+
+.navbar .selected {
+    color: var(--accent-color);
 }
