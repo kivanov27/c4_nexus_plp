@@ -1,9 +1,10 @@
 import "./index.css";
 
-const Category = () => {
+const Category = ({ category }) => {
     return (
         <div className="category">
-            category
+            <span className="category-name">{category}</span>
+            <span className="category-description"></span>
         </div>
     );
 };

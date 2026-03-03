@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400..700&display=swap");
 
-*, *::before, *::after {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 :root {
     --primary-bg-color: #e4e7ed;
     --primary-color: black;
-    --accent-color: #3902FF;
+    --accent-color: #3902ff;
     --border-color: #aaa;
 
     font-family: "Montserrat", serif;
-    line-height: 1.5;
     font-weight: 400;
 
     color: var(--primary-color);
@@ -21,8 +22,6 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-
 }
 
 a {
@@ -40,11 +39,6 @@ body {
     min-height: 100vh;
 }
 
-h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
-}
-
 button {
     border-radius: 8px;
     border: 1px solid transparent;
@@ -52,12 +46,13 @@ button {
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #1a1a1a;
+    background-color: var(--accent-color);
+    color: white;
     cursor: pointer;
     transition: border-color 0.25s;
 }
 button:hover {
-    border-color: var(--accent-color);
+    border-color: var(--primary-bg-color);
 }
 button:focus,
 button:focus-visible {

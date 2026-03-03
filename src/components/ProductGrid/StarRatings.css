@@ -1,0 +1,19 @@
+.stars {
+    position: relative;
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.stars-back {
+    color: #ddd;
+}
+
+.stars-front {
+    color: gold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}

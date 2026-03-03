@@ -27,6 +27,10 @@ const App = () => {
         fetchProducts();
     }, []);
 
+    const productsToDisplay = products.filter(
+        p => p.category === category
+    );
+
     const categories = [...new Set(products.map(p => p.category))];
 
     return (
@@ -40,10 +44,10 @@ const App = () => {
                 <Filter />
                 <div className="main">
                     <div className="main-header">
-                        <Category />
+                        <Category category={category} />
                         <Sort />
                     </div>
-                    <ProductGrid />
+                    <ProductGrid products={productsToDisplay} />
                 </div>
             </div>
             <Footer />

@@ -1,9 +1,7 @@
-.app {}
-
 .container {
-    width: 100%;
+    width: 1280px;
     display: flex;
-    padding: 2rem 10rem;
+    margin: 1rem auto;
     column-gap: 1rem;
 }
 
