@@ -1,8 +1,6 @@
-import "./index.css";
-
 const Filter = () => {
     return (
-        <div className="filter">
+        <div className="w-[30%]">
             filter
         </div>
     );

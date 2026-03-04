@@ -1,8 +1,6 @@
-import "./index.css";
-
 const Sort = () => {
     return (
-        <div className="sort">
+        <div>
             sort
         </div>
     );

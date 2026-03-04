@@ -1,11 +1,11 @@
 const NavBar = ({ categories, selectedCategory, setCategory }) => {
     return (
-        <div className="navbar">
+        <div className="navbar flex gap-x-8">
             {categories.map((category, i) => 
                 <a 
                     key={i}
                     onClick={() => setCategory(category)}
-                    className={`${selectedCategory == category ? "selected" : "" }`}
+                    className={`${selectedCategory == category ? "selected" : "" } cursor-pointer`}
                 >
                     {category}
                 </a>

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400..700&display=swap");
+@import "tailwindcss";
 
 *,
 *::before,
@@ -40,19 +41,19 @@ body {
 }
 
 button {
-    border-radius: 8px;
-    border: 1px solid transparent;
+    border-radius: 10px;
+    border: 1px solid var(--accent-color);
     padding: 0.6em 1.2em;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: var(--accent-color);
-    color: white;
+    background-color: var(--primary-bg-color);
     cursor: pointer;
-    transition: border-color 0.25s;
+    transition: background-color 300ms ease, color 300ms ease;
 }
 button:hover {
-    border-color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+    color: white;
 }
 button:focus,
 button:focus-visible {

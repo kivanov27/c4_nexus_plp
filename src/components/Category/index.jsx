@@ -1,10 +1,8 @@
-import "./index.css";
-
 const Category = ({ category }) => {
     return (
-        <div className="category">
-            <span className="category-name">{category}</span>
-            <span className="category-description"></span>
+        <div className="flex gap-x-4 items-center">
+            <span className="text-xl capitalize font-medium">{category}</span>
+            <span className="text-sm"></span>
         </div>
     );
 };

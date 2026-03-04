@@ -1,18 +1,23 @@
-import "./Product.css";
 import StarRating from "./StarRating";
 
 const Product = ({ product }) => {
+    const handleAddToCart = () => {
+        alert("Product added to cart");
+    }
+
     return (
-        <div className="product-card">
+        <div className="h-112.5 p-4 bg-white rounded-md flex flex-col items-center justify-between gap-y-2">
             <img 
                 src={product.thumbnail} 
                 alt={product.description} 
-                className="product-img"
+                width={150}
+                height={150}
+                className="rounded-md"
             />
-            <span className="product-title">
+            <span className="font-medium text-center">
                 {product.title}
             </span>
-            <p className="product-description">
+            <p className="text-xs overflow-y-scroll">
                 {product.description}
             </p>
             <span className="product-price">
@@ -21,7 +26,7 @@ const Product = ({ product }) => {
             <span className="product-rating">
                 <StarRating rating={product.rating} />
             </span>
-            <button>
+            <button onClick={handleAddToCart}>
                 Add to cart
             </button>
         </div>

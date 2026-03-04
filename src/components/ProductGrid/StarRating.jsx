@@ -1,11 +1,9 @@
-import "./StarRatings.css";
-
 const StarRating = ({ rating }) => {
     return (
-        <div className="stars">
-            <div className="stars-back">★★★★★</div>
+        <div className="relative inline-block text-lg leading-none">
+            <div className="text-gray-300">★★★★★</div>
             <div
-                className="stars-front"
+                className="text-amber-300 absolute top-0 left-0 overflow-hidden whitespace-nowrap"
                 style={{ width: `${(rating / 5) * 100}%` }}
             >
                 ★★★★★

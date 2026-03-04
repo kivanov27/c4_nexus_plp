@@ -1,4 +1,3 @@
-import "./App.css";
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Filter from "./components/Filter";
@@ -34,16 +33,16 @@ const App = () => {
     const categories = [...new Set(products.map(p => p.category))];
 
     return (
-        <div className="app">
+        <div>
             <Header 
                 categories={categories} 
                 selectedCategory={category}
                 setCategory={setCategory} 
             />
-            <div className="container">
+            <div className="w-7xl flex my-4 mx-auto gap-x-4">
                 <Filter />
-                <div className="main">
-                    <div className="main-header">
+                <div className="w-[70%] flex flex-col gap-y-4">
+                    <div className="w-full flex justify-between">
                         <Category category={category} />
                         <Sort />
                     </div>
