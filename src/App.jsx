@@ -53,10 +53,10 @@ const App = () => {
     // Sort products based on selected sorting option
     const sortedProducts = [...filteredProducts].sort((a, b) => {
         switch (sortOption) {
-            case "alphabetical-asc":
-                return a.title - b.title;
-            case "alphabetical-desc":
-                return b.title - a.title;
+            case "alph-asc":
+                return a.title > b.title;
+            case "alph-desc":
+                return a.title < b.title;
             case "price-asc":
                 return a.price - b.price;
             case "price-desc":
@@ -88,9 +88,12 @@ const App = () => {
                     setPriceRange={setPriceRange}
                 />
                 <div className="w-[80%] flex flex-col gap-y-4">
-                    <div className="w-full flex justify-between">
+                    <div className="w-full flex justify-between bg-white rounded-md p-4">
                         <Category category={category} />
-                        <Sort />
+                        <Sort 
+                            sortOption={sortOption} 
+                            setSortOption={setSortOption}
+                        />
                     </div>
                     <ProductGrid 
                         products={productsToDisplay} 
