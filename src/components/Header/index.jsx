@@ -1,6 +1,6 @@
 import NavBar from "./NavBar";
 
-const Header = ({ categories, selectedCategory, setCategory }) => {
+const Header = ({ categories, selectedCategory, setCategory, setRows }) => {
     return (
         <div 
             className="sticky top-0 w-full grid grid-cols-[1fr_auto_1fr] 
@@ -14,6 +14,7 @@ const Header = ({ categories, selectedCategory, setCategory }) => {
                 categories={categories} 
                 selectedCategory={selectedCategory}
                 setCategory={setCategory} 
+                setRows={setRows}
             />
         </div>
     );
