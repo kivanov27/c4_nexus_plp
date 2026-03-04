@@ -84,6 +84,8 @@ const App = () => {
                 <Filter 
                     minRating={minRating}
                     setMinRating={setMinRating} 
+                    priceRange={priceRange}
+                    setPriceRange={setPriceRange}
                 />
                 <div className="w-[80%] flex flex-col gap-y-4">
                     <div className="w-full flex justify-between">
