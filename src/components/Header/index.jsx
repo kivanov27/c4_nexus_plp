@@ -1,4 +1,3 @@
-import "./index.css";
 import NavBar from "./NavBar";
 
 const Header = ({ categories, selectedCategory, setCategory }) => {
