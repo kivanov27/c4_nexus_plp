@@ -1,24 +1,17 @@
 const Category = ({ category }) => {
-    const getDesc = () => {
-        switch (category) {
-            case "groceries":
-                return "groceries description";
-            case "home-decoration":
-                return "home-decoration description";
-            case "kitchen-accessories":
-                return "kitchen-accessories description";
-            case "laptops":
-                return "laptops description";
-            case "mens-shirts":
-                return "mens-shirts description";
-        }
+    const descriptions = {
+        groceries: "Everyday essentials and pantry staples.",
+        "home-decoration": "Stylish pieces to elevate your space.",
+        "kitchen-accessories": "Tools and accessories for easier cooking.",
+        laptops: "Powerful laptops for work and play.",
+        "mens-shirts": "Comfortable and stylish shirts for men."
     };
 
     return (
         <div className="flex gap-x-4 items-center">
             <span className="text-xl capitalize font-medium">{category}</span>
             <span className="text-sm">
-                {getDesc()}
+                {descriptions[category] || ""}
             </span>
         </div>
     );
