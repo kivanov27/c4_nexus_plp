@@ -33,7 +33,10 @@ const Product = ({ product }) => {
                     ({product.rating})
                 </span>
             </span>
-            <button onClick={handleAddToCart}>
+            <button 
+                onClick={handleAddToCart}
+                className="btn-cart"
+            >
                 Add to Cart
             </button>
         </div>

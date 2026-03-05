@@ -1,4 +1,3 @@
-- scale it
 - add discount circle on top left of item
 - make price display old one with a line through and after discount next to it
 - make space under footer same color
