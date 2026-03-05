@@ -17,12 +17,19 @@
     font-weight: 400;
 
     color: var(--primary-color);
-    background-color: var(--primary-bg-color);
+    background-color: var(--accent-color);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: var(--primary-bg-color);
 }
 
 a {
@@ -32,12 +39,6 @@ a {
 }
 a:hover {
     color: var(--accent-color);
-}
-
-body {
-    margin: 0;
-    min-width: 320px;
-    min-height: 100vh;
 }
 
 button {

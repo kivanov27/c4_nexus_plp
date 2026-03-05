@@ -1,2 +1,0 @@
-- make space under footer same color
-- show prices with comma
