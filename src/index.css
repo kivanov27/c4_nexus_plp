@@ -64,14 +64,11 @@ button:focus-visible {
     .btn-cart {
         font-size: 0.85em;
     }
-    button:hover {
-        color: black;
-    }
 }
 
 
 @media (max-width: 1024px) {
-    button:hover {
+    .btn-filter:hover {
         color: black;
     }
 }

@@ -9,6 +9,7 @@ const MobileFilter = ({ minRating, setMinRating, priceRange, setPriceRange }) =>
             <button 
                 style={{ backgroundColor: "white", padding: "0.25rem", fontWeight: 400 }}
                 onClick={() => setIsOpen(true)}
+                className="btn-filter"
             >
                 Filter +
             </button>

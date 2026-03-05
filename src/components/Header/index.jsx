@@ -7,8 +7,8 @@ const Header = ({ categories, selectedCategory, setCategory, setRows }) => {
 
     return (
         <div 
-            className="sticky top-0 w-full grid grid-cols-[1fr_auto_1fr] 
-            items-center py-4 px-8 border-b border-(--border-color) bg-(--primary-bg-color)"
+            className="sticky top-0 w-full grid grid-cols-[1fr_auto_1fr] items-center 
+            py-4 px-8 border-b border-(--border-color) bg-(--primary-bg-color) z-50"
         >
             <button 
                 onClick={() => setIsMenuOpen(true)}
