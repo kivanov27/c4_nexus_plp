@@ -35,6 +35,7 @@ const Header = ({ categories, selectedCategory, setCategory, setRows }) => {
                 categories={categories}
                 setCategory={setCategory}
                 selectedCategory={selectedCategory}
+                setRows={setRows}
             />
         </div>
     );

@@ -23,7 +23,7 @@ const Sort = ({ setSortOption }) => {
             name="sort"
             defaultValue={options[0].value}
             onChange={({ target }) => setSortOption(target.value)}
-            className="border border-(--accent-color) rounded-md p-1"
+            className="w-fit border border-(--accent-color) rounded-md p-1"
         >
             {options.map(opt =>
                 <option key={opt.value} value={opt.value}>

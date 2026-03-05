@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 
-const MobileMenu = ({ isOpen, setIsOpen, categories, setCategory, selectedCategory }) => {
+const MobileMenu = ({ isOpen, setIsOpen, categories, setCategory, selectedCategory, setRows }) => {
     useEffect(() => {
         document.body.style.overflow = isOpen ? "hidden" : "auto";
     }, [isOpen]);
@@ -28,6 +28,7 @@ const MobileMenu = ({ isOpen, setIsOpen, categories, setCategory, selectedCatego
                         onClick={() => {
                             setCategory(category);
                             setIsOpen(false);
+                            setRows(5);
                         }}
                         className={`
                             ${selectedCategory == category ? "text-(--accent-color)" : ""} 

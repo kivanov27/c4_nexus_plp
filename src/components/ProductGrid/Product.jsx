@@ -34,7 +34,7 @@ const Product = ({ product }) => {
                 </span>
             </span>
             <button onClick={handleAddToCart}>
-                Add to cart
+                Add to Cart
             </button>
         </div>
     );

@@ -81,7 +81,7 @@ const App = () => {
                 setRows={setRows}
             />
             <div 
-                className="sm:w-xl md:w-2xl lg:w-4xl xl:w-6xl 2xl:w-7xl 
+                className="w-xs sm:w-xl md:w-2xl lg:w-4xl xl:w-6xl 2xl:w-7xl 
                 flex-1 flex my-4 mx-auto gap-x-4"
             >
                 <Filter 
@@ -91,7 +91,7 @@ const App = () => {
                     setPriceRange={setPriceRange}
                 />
                 <div className="w-full xl:w-[80%] flex flex-col gap-y-4">
-                    <div className="w-full flex justify-between bg-white rounded-md p-4">
+                    <div className="w-full flex flex-col md:flex-row gap-y-4 justify-between items-center bg-white rounded-md p-4">
                         <Category category={category} />
                         <Sort setSortOption={setSortOption} />
                     </div>

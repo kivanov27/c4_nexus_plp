@@ -8,7 +8,7 @@ const Category = ({ category }) => {
     };
 
     return (
-        <div className="flex gap-x-4 items-center">
+        <div className="flex flex-col md:flex-row gap-x-4 items-center">
             <span className="text-xl capitalize font-medium">{category}</span>
             <span className="text-sm">
                 {descriptions[category] || ""}
