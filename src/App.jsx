@@ -90,10 +90,7 @@ const App = () => {
                 <div className="w-[80%] flex flex-col gap-y-4">
                     <div className="w-full flex justify-between bg-white rounded-md p-4">
                         <Category category={category} />
-                        <Sort 
-                            sortOption={sortOption} 
-                            setSortOption={setSortOption}
-                        />
+                        <Sort setSortOption={setSortOption} />
                     </div>
                     <ProductGrid 
                         products={productsToDisplay} 

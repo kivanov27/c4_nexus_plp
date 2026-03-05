@@ -1,4 +1,4 @@
-const Sort = ({ sortOption, setSortOption }) => {
+const Sort = ({ setSortOption }) => {
     const options = [
         {
             value: "alph-asc",
