@@ -61,7 +61,17 @@ button:focus-visible {
 }
 
 @media (max-width: 640px) {
-    button {
-        font-size: 0.85em;
+    /* button { */
+    /*     font-size: 0.85em; */
+    /* } */
+    button:hover {
+        color: black;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    button:hover {
+        color: black;
     }
 }

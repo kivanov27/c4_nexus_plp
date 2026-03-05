@@ -8,7 +8,7 @@ const Filter = ({ minRating, setMinRating, priceRange, setPriceRange }) => {
         <div className="w-[20%] hidden lg:flex flex-col gap-y-4">
             <div className="bg-white rounded-md p-4 flex flex-col gap-y-1">
                 <div className="flex gap-x-4">
-                    <p>Rating above</p>
+                    <p>Rating above:</p>
                     {minRating !== 0 &&
                         <div 
                             className="border border-red-500 text-red-500 px-2 rounded-md cursor-pointer"
@@ -38,7 +38,7 @@ const Filter = ({ minRating, setMinRating, priceRange, setPriceRange }) => {
 
             <div className="bg-white rounded-md p-4 flex flex-col gap-y-1">
                 <div className="flex gap-x-4">
-                    <p>Price</p>
+                    <p>Price:</p>
                     {(priceRange[0] !== 0 || priceRange[1] !== Infinity) &&
                         <div 
                             className="border border-red-500 text-red-500 px-2 rounded-md cursor-pointer"

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Filter from "./components/Filter";
+import MobileFilter from "./components/Filter/MobileFilter";
 import Category from "./components/Category";
 import Sort from "./components/Sort";
 import ProductGrid from "./components/ProductGrid";
@@ -82,7 +83,7 @@ const App = () => {
             />
             <div 
                 className="w-xs sm:w-xl md:w-2xl lg:w-4xl xl:w-6xl 2xl:w-7xl 
-                flex-1 flex my-4 mx-auto gap-x-4"
+                flex-1 flex flex-col lg:flex-row my-4 mx-auto gap-x-4"
             >
                 <Filter 
                     minRating={minRating}
@@ -91,9 +92,18 @@ const App = () => {
                     setPriceRange={setPriceRange}
                 />
                 <div className="w-full xl:w-[80%] flex flex-col gap-y-4">
-                    <div className="w-full flex flex-col md:flex-row gap-y-4 justify-between items-center bg-white rounded-md p-4">
+                    <div 
+                        className="w-full flex flex-col lg:flex-row gap-y-4 justify-between 
+                        items-center bg-white rounded-md p-4"
+                    >
                         <Category category={category} />
                         <Sort setSortOption={setSortOption} />
+                        <MobileFilter
+                            minRating={minRating}
+                            setMinRating={setMinRating} 
+                            priceRange={priceRange}
+                            setPriceRange={setPriceRange}
+                        />
                     </div>
                     <ProductGrid 
                         products={productsToDisplay} 
