@@ -1,6 +1,6 @@
 const NavBar = ({ categories, selectedCategory, setCategory, setRows }) => {
     return (
-        <div className="navbar flex gap-x-8">
+        <div className="hidden lg:flex gap-x-8">
             {categories.map((category, i) => (
                 <div
                     key={i}

@@ -5,7 +5,7 @@ const Filter = ({ minRating, setMinRating, priceRange, setPriceRange }) => {
     const priceRanges = [[0, 50], [50, 100], [100, 150], [150, Infinity]];
 
     return (
-        <div className="w-[20%] flex flex-col gap-y-4">
+        <div className="w-[20%] hidden lg:flex flex-col gap-y-4">
             <div className="bg-white rounded-md p-4 flex flex-col gap-y-1">
                 <div className="flex gap-x-4">
                     <p>Rating above</p>

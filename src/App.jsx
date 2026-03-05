@@ -80,14 +80,17 @@ const App = () => {
                 setCategory={setCategory} 
                 setRows={setRows}
             />
-            <div className="flex-1 w-7xl flex my-4 mx-auto gap-x-4">
+            <div 
+                className="sm:w-xl md:w-2xl lg:w-4xl xl:w-6xl 2xl:w-7xl 
+                flex-1 flex my-4 mx-auto gap-x-4"
+            >
                 <Filter 
                     minRating={minRating}
                     setMinRating={setMinRating} 
                     priceRange={priceRange}
                     setPriceRange={setPriceRange}
                 />
-                <div className="w-[80%] flex flex-col gap-y-4">
+                <div className="w-full xl:w-[80%] flex flex-col gap-y-4">
                     <div className="w-full flex justify-between bg-white rounded-md p-4">
                         <Category category={category} />
                         <Sort setSortOption={setSortOption} />
