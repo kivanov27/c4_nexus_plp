@@ -1,3 +1,5 @@
 ### To run
-> npm run build \n
+
+> npm run build
+
 > npm run preview
