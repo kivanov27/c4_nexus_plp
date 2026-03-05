@@ -1,3 +1,3 @@
-## To run
-$ npm run build
-$ npm run preview
+### To run
+> npm run build
+> npm run preview
